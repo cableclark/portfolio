@@ -679,3 +679,12 @@ width: 95%;
     right: 0;
   }
 }
+.small-icons {
+  width: 24px;
+  height:24px;
+}
+.small-image
+{
+  max-width: 160px;
+  height: auto;
+}
