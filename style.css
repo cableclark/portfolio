@@ -19,7 +19,7 @@ CSS STRUCTURE:
   --heading-font: "Roboto", Verdana, serif;
   --heading-font-weight: 700;
   --heading-color: var(--bs-dark);
-  --heading-line-height: 1.2;
+  --heading-line-height: 1;
 
   --swiper-theme-color: var(--bs-primary);
 
@@ -252,7 +252,10 @@ a {
 /* Social media icons  */
 
 
-
+.text-fx {
+    display: block; /* Or inline-flex */
+    overflow: visible !important;
+}
 
 /* one page menu */
 #one-page-menu .nav-link {
@@ -318,8 +321,9 @@ a {
 .display-xl {
   font-size: calc(0.1rem + 6.5vw);
   font-weight: var(--heading-font-weight);
-  letter-spacing: -0.06em;
-  line-height: var(--heading-line-height);
+  /* letter-spacing: -0.06em; */
+  /* line-height: var(--heading-line-height); */
+  line-height
 }
 
 /* mobile menu */
@@ -584,7 +588,7 @@ width: 95%;
 /* Text Effects */
 .txt-fx {
   overflow: hidden;
-  line-height: var(--heading-line-height);
+  /* line-height: var(--heading-line-height); */
 }
 .txt-fx.zoom {
   overflow: visible;
