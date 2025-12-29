@@ -16,7 +16,7 @@ CSS STRUCTURE:
 --------------------------------------------------------------*/
 :root,
 [data-bs-theme=dark] {
-  --heading-font: "Roboto", Verdana, serif;
+  --heading-font: "Funnel Display", Verdana, serif;
   --heading-font-weight: 700;
   --heading-color: var(--bs-dark);
   --heading-line-height: 1;
@@ -118,15 +118,15 @@ a {
 
 /* btn */
 .btn {
-  --bs-btn-border-radius: 0;
+  --bs-btn-border-radius: 0px;
 }
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: var(--bs-primary);
+  /* --bs-btn-bg: var(--bs-primary); */
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bs-primary-dark);
+  /* --bs-btn-hover-bg: var(--bs-primary-dark); */
   --bs-btn-hover-border-color: var(--bs-primary-dark);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
@@ -136,6 +136,7 @@ a {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: var(--bs-primary);
   --bs-btn-disabled-border-color: var(--bs-primary);
+  border-radius: 50px;
 }
 
 .btn-outline-primary {
@@ -261,7 +262,7 @@ a {
 #one-page-menu .nav-link {
   position: relative;
   color: var(--bs-light);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 240%;
