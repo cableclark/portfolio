@@ -320,11 +320,16 @@ a {
 
 /* extra classes */
 .display-xl {
-  font-size: calc(0.1rem + 6.5vw);
+  font-size: calc(0.2rem + 6.5vw);
   font-weight: var(--heading-font-weight);
   /* letter-spacing: -0.06em; */
   /* line-height: var(--heading-line-height); */
-  line-height
+}
+
+@media (max-width: 768px) {
+ .display-xl {
+  font-size: 42px;
+ }
 }
 
 /* mobile menu */
