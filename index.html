@@ -3,7 +3,7 @@
 <head>
   <title>Signified Studio</title>
   <meta charset="utf-8">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
@@ -11,22 +11,66 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <link rel="stylesheet" type="text/css" href="css/vendor.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+ 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class=" homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
   <a class="menu-btn"><span></span></a>
   <div class="container-fluid overflow-hidden">
-     <div id="header-placeholder"></div>
+    <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-dark h-100 ">
+      <div class="header-wrap d-flex flex-column justify-content-between h-100">
+        <div class="navigation">
+          <!--Logo -->
+          <div class="site-logo mt-5">
+            <a href="index.html">
+              <img src="./images/signified-logo.png" alt="logo" class="img-fluid">
+            </a>
+          </div>
+            <!-- Main menu -->
+            <nav id="one-page-menu" class="vertical-menu my-5">
+              <ul class="menu-list list-unstyled">
+                  <li><a href="index.html#home" class="nav-link nav__list-item">Home</a></li>
+                  <li><a href="index.html#about" class="nav-link nav__list-item">About</a></li>
+                  <li><a href="index.html#portfolio" class="nav-link nav__list-item" >Works</a></li>
+                  <li><a href="index.html#experience" class="nav-link nav__list-item">Experience</a></li>
+                  <li><a href="index.html#contact" class="nav-link nav__list-item">Contact</a></li>
+              </ul>
+          </nav>
+        </div>
+        <!-- Social icons -->
+        <div class="mt-5">
+          <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3">
+            <li>
+              <a href="https://www.behance.net/tremolobureau" target="_blank" class="text-light small-icons">
+                <img src="./images/behance.png" alt="logo" class="icons small-icons">
+              </a>
+            </li>
+          <li>
+              <a href="https://www.linkedin.com/in/igor-stojanovski-540b08104/"  target="_blank" class="text-light">
+                <img src="./images/linkedin.png" alt="logo" class="icons small-icons">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/mutestutter/" target="_blank"class="text-light">
+                <img src="./images/instagram.png" alt="logo" class="icons small-icons">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>   
     <main class="col-lg-10 offset-lg-2">
       <div class="container">
         <!-- content wrapper -->
@@ -35,12 +79,12 @@
           <section id="home" class=" bg-text" data-text="01">
             <div class="row">
               <div class="col-lg-6">
-                <div class="banner-image text-center mb-5" data-aos="fade-right">
+                <div class="banner-image text-center " data-aos="fade-right">
                   <img src="images/hero-image.png" alt="banner" class="img-fluid" class="img-fluid">
                 </div>
               </div>
               <div class="col-lg-5">
-                <div class="banner-content my-1 pt-1 my-lg-5 pt-lg-5" data-aos="fade-in">
+                <div class="banner-content my-1 pt-1 my-lg-5" data-aos="fade-in">
                   <span class="text-muted">Hey, I'm Igor, a visual designer</span>
                   <h1 class="banner-title display-xl txt-fx text-fx slide-up">Ideas into matter</h1>
                 </div>
@@ -66,7 +110,7 @@
                 </div>
               </div>
               <div class="col-lg-3 my-3">
-                <a href="#portfolio" class="btn btn-primary btn-dark button  py-3 px-4" data-aos="fade-up" data-aos-delay="300">View My Work</a>
+                <a href="#portfolio" class="btn btn-primary btn-dark button py-3 px-4" data-aos="fade-up" data-aos-delay="300">View My Work</a>
               </div>
             </div>
           </section>
@@ -88,8 +132,8 @@
             </div>
             <!-- Porfolio Section -->
           </section>
-            <section id="portfolio" class="bg-text" data-text="03">
-            <div class="section-header" data-aos="fade-up">
+            <section id="portfolio" class="bg-text py-5" data-text="03">
+            <div class="section-header " data-aos="fade-up">
               <div class="row justify-content-center">
                 <div class="col-lg-5">
                   <span class="text-muted text-uppercase">What I do</span>
@@ -301,7 +345,7 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+   <script src="js/script.js"></script>
 </body>
 </html>

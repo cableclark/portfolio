@@ -15,13 +15,14 @@
     var menu = undefined;
     var menuItems = undefined;
     var init = function init() {
-      body = document.querySelector('body');
-      menu = document.querySelector('.menu-btn');
-      menuItems = document.querySelectorAll('.nav__list-item');
-      applyListeners();
+        body = document.querySelector('body');
+        menu = document.querySelector('.menu-btn');
+        menuItems = document.querySelectorAll('.nav__list-item');
+        applyListeners();
     };
     var applyListeners = function applyListeners() {
       menu.addEventListener('click', function () {
+        console.log('clicked');
         return toggleClass(body, 'nav-active');
       });
     };
@@ -34,7 +35,7 @@
 
   // Portfolio Slider
   var swiper = new Swiper(".portfolio-Swiper", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
@@ -42,7 +43,7 @@
     },
     breakpoints: {
       300: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 2,
@@ -154,3 +155,23 @@
 
 
 })(jQuery);
+
+
+let body = document.querySelector('body');
+let menubtn = document.querySelector('.menu-btn');
+let menuItems = document.querySelectorAll('.nav__list-item');
+
+function applyListeners() {
+      
+      menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          return toggleClass(body, 'nav-active');
+      });
+      })
+    };
+  
+  function toggleClass(element, stringClass) {
+      if (element.classList.contains(stringClass)) element.classList.remove(stringClass); else element.classList.add(stringClass);
+    };
+
+  applyListeners();
