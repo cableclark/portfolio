@@ -18,6 +18,4 @@ async function loadStaticNav() {
 document.addEventListener('DOMContentLoaded', loadStaticNav);
 
 
-document.addEventListener('DOMContentLoaded', loadStaticNav);
-
 
